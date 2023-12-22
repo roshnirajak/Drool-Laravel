@@ -11,14 +11,13 @@ Buy animal food
 (Working on the payment integration with laravel)
 
 ### Register
-<img src="ss/register.png" width="440px"/> <img src="ss/register-error.png" width="400px"/>
+<img src="ss/register.png" width="400px"/> <img src="ss/register-error.png" width="360px"/>
 ### Login
 <img src="ss/loginpage.png" width="440px"/>
 
 
 ### Profile Page
-<img src="ss/profilepage.png" width="440px"/>
-<img src="ss/editprofile.png" width="440px"/>
+<img src="ss/profilepage.png" width="400px"/> <img src="ss/editprofile.png" width="400px"/>
 
 ### Admin Section
 Giving Admin access to admin panel through Navbar
@@ -26,7 +25,7 @@ Giving Admin access to admin panel through Navbar
 
 Admin Panel
 ![AdminPanel](ss/adminpanel.png)
-<img src="ss/addproducts.png" width="440px"/>
+<img src="ss/addproducts.png" width="400px"/>
 ![AdminViewUsers](ss/admin-viewuser.png)
 
 
