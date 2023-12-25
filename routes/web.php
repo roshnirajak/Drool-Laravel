@@ -13,6 +13,8 @@ Route::get('/about', [DemoController::class, 'about']);
 
 Route::get('/products', [FoodController::class, 'showAllProducts'])->name('showAllProducts');
 Route::get('/products/{id}/detail', [FoodController::class, 'showProduct'])->name('showProduct');
+Route::get('/products/{id}/initiate-payment', [FoodController::class, 'initiatePayment'])->name('product.initiatePayment')->middleware(['auth', 'checkCookie']);;
+Route::post('/products/{foodId}/payment', [FoodController::class, 'processPayment'])->name('product.payment')->middleware(['auth', 'checkCookie']);;
 
 Route::get('/contact', [DemoController::class, 'contact']);
 Route::get('/contact', [DemoController::class, 'contact']);
