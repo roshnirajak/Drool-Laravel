@@ -16,13 +16,13 @@ class AdminController extends Controller
 
         // Use the Cookie facade to check if 'adminEmail' cookie exists
         if (Cookie::has('adminEmail')) {
-            return view('admin_panel', compact('user'));
+            return view('admin.admin_panel', compact('user'));
         }
     }
     public function showAddFoodForm()
     {
         $user = Auth::user();
-        return view('addFood', compact('user'));
+        return view('admin.addFood', compact('user'));
     }
     public function addFood(Request $request)
     {
@@ -62,7 +62,7 @@ class AdminController extends Controller
     {
         $users = User::all();
         $user= Auth::user();
-        return view('userDetails', compact('users', 'user'));
+        return view('admin.userDetails', compact('users', 'user'));
     }
     public function deleteUser($id)
     {
