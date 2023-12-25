@@ -17,7 +17,9 @@ Buy animal food
 
 
 ### Profile Page
-<img src="ss/profilepage.png" width="400px"/> <img src="ss/editprofile.png" width="400px"/>
+
+<img src="ss/profile-page.png" width="400px"/> <img src="ss/editprofile.png" width="400px"/>
+
 
 ### Admin Section
 Giving Admin access to admin panel through Navbar
