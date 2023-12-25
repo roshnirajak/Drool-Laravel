@@ -6,19 +6,18 @@ Buy animal food
 
 ### Products Page
 ![ProductsPage](ss/productspage.png) 
-![ViewProductDetails](ss/viewproduct.png) 
+<img src="ss/viewproduct.png" width="400px"/>
+
 (Working on the payment integration with laravel)
 
-### Register & Login
+### Register
+<img src="ss/register.png" width="400px"/> <img src="ss/register-error.png" width="360px"/>
+### Login
+<img src="ss/loginpage.png" width="440px"/>
 
-![RegisterPage](ss/register.png) 
-
-![Displaying Error-Register Page](ss/register-error.png)
-![LoginPage](ss/loginpage.png)
 
 ### Profile Page
-![ProfilePage](ss/profilepage.png)
-![EditProfile](ss/editprofile.png)
+<img src="ss/profilepage.png" width="400px"/> <img src="ss/editprofile.png" width="400px"/>
 
 ### Admin Section
 Giving Admin access to admin panel through Navbar
@@ -26,7 +25,7 @@ Giving Admin access to admin panel through Navbar
 
 Admin Panel
 ![AdminPanel](ss/adminpanel.png)
-![AddProduct](ss/addproducts.png)
+<img src="ss/addproducts.png" width="400px"/>
 ![AdminViewUsers](ss/admin-viewuser.png)
 
 
