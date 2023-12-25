@@ -14,7 +14,7 @@
                 <p class="card-text"><b>Seller: </b>{{ $food->seller }}</p>
             </div>
             <br>
-            <a href="#" class="btn btn-success">Buy Now</a>
+            <a href="{{ route('product.initiatePayment', ['id' => $food->id]) }}" class="btn btn-success">Buy Now</a>
         </div>
         <div class="card-footer text-muted">
             {{-- 2 days ago --}}
