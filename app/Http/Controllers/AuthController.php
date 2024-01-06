@@ -5,14 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\User;
-
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Cookie;
 
 class AuthController extends Controller
 {
     public function showRegistrationForm()
     {
-        return view('register');
+        return view('auth.register');
     }
 
     public function register(Request $request)
@@ -38,15 +38,17 @@ class AuthController extends Controller
             'email' => $request->input('email'),
             'password' => bcrypt($request->input('password')),
         ]);
-        // Set a cookie
-        $userEmail = $user->email;
-        $cookie = cookie('userEmail', $userEmail, 60);
+        // // Set a cookie
+        // $userEmail = $user->email;
+        // $cookie = cookie('userEmail', $userEmail, 60);
 
-        return redirect()->route('profile')->with('success', 'Registration successful!');
+        event(new Registered($user));
+        return view('auth.login');
+        // return redirect()->route('register')->with('error', 'Registration unsuccessful!');
     }
     public function showLoginForm()
     {
-        return view('login');
+        return view('auth.login');
     }
 
     public function login(Request $request)

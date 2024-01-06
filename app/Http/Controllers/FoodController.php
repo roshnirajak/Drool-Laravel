@@ -74,7 +74,9 @@ class FoodController extends Controller
             'json_response' => json_encode($request->all()),
         ]);
 
-
         return redirect()->route('index')->with('success', 'Payment successful!');
+    }
+    public function addToCart($foodId){
+        return redirect()->route('index')->with('success', $foodId);
     }
 }

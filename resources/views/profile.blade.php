@@ -11,7 +11,7 @@
             &nbsp;
             <div class=" image d-flex flex-column justify-content-center align-items-center">
                 <button class="btn">
-                    <img src="{{ $user->profile_pic }}" height="100" />
+                    <img src="../{{ $user->profile_pic }}" height="100" />
                 </button>
                 &nbsp;
                 <span class="name mt-3"> {{ $user->fname }}</span>
@@ -29,7 +29,12 @@
                 </div>
                 <div class="d-flex flex-row justify-content-center align-items-center mt-3">
                     <span class="number">&nbsp;
-                        <span class="follow">&nbsp;
+                        <span class="follow">
+                            @if ($user->email_verified_at == null)
+                            <a href="{{ route('verification.notice') }}" class="btn "> <button class="btn1 btn-danger">Verify Email</button></a>
+                            @else
+                                Email Verified
+                            @endif
                         </span>
                     </span>
                 </div>

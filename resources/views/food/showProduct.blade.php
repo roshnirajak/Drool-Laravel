@@ -14,6 +14,7 @@
                 <p class="card-text"><b>Seller: </b>{{ $food->seller }}</p>
             </div>
             <br>
+            <a href="{{ route('product.addToCart', ['foodId' => $food->id]) }}" class="btn btn-primary">Add To Cart</a><br><br>
             <a href="{{ route('product.initiatePayment', ['id' => $food->id]) }}" class="btn btn-success">Buy Now</a>
         </div>
         <div class="card-footer text-muted">
